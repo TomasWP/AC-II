@@ -1,0 +1,1 @@
+pcompile prog.s && ldpic32 prog && pterm
