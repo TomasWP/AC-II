@@ -1,1 +1,3 @@
-pcompile prog.s && ldpic32 prog && pterm
+Assembly: pcompile prog.s && ldpic32 prog && pterm
+
+C: pcompile prog.c && ldpic32 prog && pterm
