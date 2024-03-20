@@ -12,7 +12,7 @@ int main(void){
 	AD1CON1bits.CLRASAM = 1;	// Always the same code
 	AD1CON3bits.SAMC = 16;		// Always the same code
 	AD1CHSbits.CH0SA = 4;		// Always the same code only change value o to 15(Select AN4 as input for the A/D converter)
-	AD1CON2bits.SMPI = 3;		// Always the same code only change value N-1(1 sample will be converted and stored)
+	AD1CON2bits.SMPI = 0;		// Always the same code only change value N-1(1 sample will be converted and stored)
 	AD1CON1bits.ON = 1;		// Always the same code (Enable A/D Converter)
 
 	while(1){
