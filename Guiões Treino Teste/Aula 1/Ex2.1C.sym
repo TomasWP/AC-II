@@ -1,0 +1,18 @@
+GAS LISTING Ex2.1C.s 			page 1
+
+
+DEFINED SYMBOLS
+            Ex2.1C.s:1      *ABS*:0000000000000008 printStr
+            Ex2.1C.s:2      *ABS*:0000000000000006 printInt
+            Ex2.1C.s:3      *ABS*:0000000000000007 printInt10
+            Ex2.1C.s:4      *ABS*:0000000000000005 readInt10
+            Ex2.1C.s:6      .data:0000000000000000 str1
+            Ex2.1C.s:7      .data:000000000000002a str2
+            Ex2.1C.s:8      .data:0000000000000047 str3
+            Ex2.1C.s:9      .data:000000000000005a str4
+            Ex2.1C.s:10     .data:000000000000006e str5
+            Ex2.1C.s:11     .data:000000000000008d str6
+            Ex2.1C.s:14     .text:0000000000000000 main
+            Ex2.1C.s:15     .text:0000000000000000 while
+
+NO UNDEFINED SYMBOLS

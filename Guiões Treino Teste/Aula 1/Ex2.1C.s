@@ -1,14 +1,14 @@
+	.equ printStr, 8
+	.equ printInt, 6
+	.equ printInt10, 7
+	.equ readInt10, 5
+	.data
 str1:	.asciiz "\nIntroduza um inteiro (sinal e módulo): "
 str2:	.asciiz	"\nValor em base 10 (signed): ";
 str3:	.asciiz	"\nValor em base 2: "
 str4:	.asciiz "\nValor em base 16: "
 str5:	.asciiz "\nValor em base 10 (unsigned): "
 str6:	.asciiz "\nValor em base 10 (unsigned), formatado: "
-	.equ printStr, 8
-	.equ printInt, 6
-	.equ printInt10, 7
-	.equ readInt10, 5
-	.data
 	.text
 	.globl main
 main:					# int main(void){
@@ -56,6 +56,6 @@ while:					#	while(1){
 	ori	$t1, $t1, 10
 	move	$a1, $t1
 	syscall				#		printInt(value, 10 | 5 << 16);
-					#	}
+	j	while				#	}
 	li	$v0, 0			#	return 0;	
 	jr	$ra			# }
