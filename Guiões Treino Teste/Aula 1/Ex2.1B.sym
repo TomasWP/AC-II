@@ -1,0 +1,15 @@
+GAS LISTING Ex2.1B.s 			page 1
+
+
+DEFINED SYMBOLS
+            Ex2.1B.s:1      *ABS*:0000000000000001 inKey
+            Ex2.1B.s:2      *ABS*:0000000000000003 putChar
+            Ex2.1B.s:3      *ABS*:0000000000000006 printInt
+            Ex2.1B.s:7      .text:0000000000000000 main
+            Ex2.1B.s:9      .text:0000000000000004 do
+            Ex2.1B.s:13     .text:0000000000000010 if
+            Ex2.1B.s:19     .text:000000000000002c else
+            Ex2.1B.s:23     .text:0000000000000038 endif
+            Ex2.1B.s:25     .text:000000000000003c while
+
+NO UNDEFINED SYMBOLS
