@@ -1,0 +1,25 @@
+42.tempo necessário modo bloco
+a) T = 1/500 000 000(500 MHz) = 2ns	time_needed = 512x2(altera consoante tipo de dma)xY(bus cycle = 1)Tx(32/32) = 2048 ns
+b) T = 1/1x10^9 = 1ns time_needed = 512x2xTx(32/16) = 2048 ns			não dedicado -> 2 ciclos
+c) T = 1ns	time_needed = 512x2xTx(16/16) = 1024 ns				dedicado -> 1 ciclo
+d) T = 2ns	time_needed = 2000x2xTx(16/16) = 8192 ns
+
+43.tempo necessário modo bloco
+a) T = 1 ns	time_needed = 1024x2x2Tx(32/32) = 4096 ns
+b) T = 2 ns	time_needed = 2048x2x2Tx(32/16) = 32768 ns
+c) T = 1 ns	time_needed = 256x2x2Tx(32/16) = 2048 ns
+d) T = 2 ns	time_needed = 2048x2x2Tx(16/16) = 16384 ns
+
+44.
+Apenas dividir cada alínea por 2
+
+45.tempo necessário modo cycle-stealing
+a) T = 4 ns	time_needed = 512x(32/32)x(2(bus cycle)T+(operacoes elementares)T+2T+T) = 12288 ns
+b) T = 1 ns	time needed = 512x(32/16)x(2T+T+2T+T) = 6144 ns
+b) T = 2 ns	time_needed = 2048x(16/16)x(2T+T+2T+T) = 24576 ns
+
+46.determinar numero de bus cycles
+a) T = 2 ns	bus_cycles = 512x2(T)x(32/32) = 1024 ns
+b) T = 1 ns	bus_cycles = 4096x1x(32/16) = 8192 ns
+c) T = 1 ns	bus_cycles = 512x1x(32/16) = 1024 ns
+d) T = 2 ns	bus_cycles = 1024x2x(16/16) = 2048 ns
