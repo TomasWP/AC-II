@@ -1,0 +1,15 @@
+GAS LISTING Ex2.1.s 			page 1
+
+
+DEFINED SYMBOLS
+             Ex2.1.s:3      *ABS*:000000000000000c ResetCoreTimer
+             Ex2.1.s:4      *ABS*:000000000000000b ReadCoreTimer
+             Ex2.1.s:5      *ABS*:000000000000bf88 ADDR_BASE_HI
+             Ex2.1.s:6      *ABS*:0000000000006100 TRISE
+             Ex2.1.s:7      *ABS*:0000000000006040 TRISB
+             Ex2.1.s:8      *ABS*:0000000000006120 LATE
+             Ex2.1.s:12     .text:0000000000000000 main
+             Ex2.1.s:24     .text:0000000000000020 while
+             Ex2.1.s:35     .text:000000000000003c wait
+
+NO UNDEFINED SYMBOLS
