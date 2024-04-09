@@ -1,0 +1,20 @@
+GAS LISTING Ex2.s 			page 1
+
+
+DEFINED SYMBOLS
+               Ex2.s:1      *ABS*:000000000000bf88 ADDR_BASE_HIGH
+               Ex2.s:2      *ABS*:000000000000000b READ_CORE_TIMER
+               Ex2.s:3      *ABS*:000000000000000c RESET_CORE_TIMER
+               Ex2.s:4      *ABS*:0000000000006100 TRISE
+               Ex2.s:5      *ABS*:0000000000006120 LATE
+               Ex2.s:6      *ABS*:0000000000000002 getChar
+               Ex2.s:10     .text:0000000000000000 main
+               Ex2.s:16     .text:0000000000000010 while
+               Ex2.s:20     .text:0000000000000018 if
+               Ex2.s:23     .text:0000000000000028 elseif
+               Ex2.s:26     .text:0000000000000038 elseif1
+               Ex2.s:29     .text:0000000000000048 elseif2
+               Ex2.s:32     .text:0000000000000058 elseif3
+               Ex2.s:35     .text:0000000000000068 endif
+
+NO UNDEFINED SYMBOLS
