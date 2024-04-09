@@ -4,18 +4,26 @@ void send2displays(unsigned char value);
 void delay(int ms);
 
 int main(void){
-    TRISB = TRISB & 0x80FF;         // RB14 to RB8 as output
-    TRISD = TRISD & 0xFF9F;         // Displays high/low as output
-
-    unsigned char cont = 0;
-    while (1)
-    {
-        cont = cont & 0xFF;         // Mask the 8 LSB from the counter
-        send2displays(cont);        
-        delay(10);                 // Delay 10ms -> 100Hz
-        cont++;
-    }
-    return 0;
+	
+	int i;
+	unsigned char counter = 0;
+	TRISB = TRISB & 0x80FF;
+	TRISD = TRISD & 0xFF9F;         // Displays high/low as output
+	
+	while(1){
+		i = 0;
+		do{
+			send2displays(counter);
+			delay(10);       // Should be 20 but still flickers, not with 10
+		}while(++i < 20);        // Counter frequency
+                                         // ms = 1/5Hz = 0,2s = 200ms
+                                         // 200ms/10ms = 20
+		
+		if(++counter == 256){
+		        counter = 0;
+		}
+	}
+	return 0;
 }
 
 void send2displays(unsigned char value){
@@ -40,17 +48,18 @@ void send2displays(unsigned char value){
         
         static char displayFlag = 0;
         
+        unsigned char dh = value >> 4;          // Get the index of the decimal part
+        unsigned char dl = value & 0x0F;        // Get the index of the unitary part
+        dh = display7Scode[dh];
+        dl = display7Scode[dl];
+        
         if(displayFlag == 0){
                 LATDbits.LATD6 = 0;
 		LATDbits.LATD5 = 1; 
-	        unsigned char dl = value & 0x0F;        // Get the index of the unitary part
-		dl = display7Scode[dl];
 		LATB = (LATB & 0X80FF) | dl << 8;
 	}else{
 		LATDbits.LATD6 = 1;
 		LATDbits.LATD5 = 0;
-		unsigned char dh = value >> 4;          // Get the index of the decimal part
-		dh = display7Scode[dh];
 		LATB = (LATB & 0X80FF) | dh << 8;       // 1000 0000 1111 1111  
 	}
 	displayFlag = !displayFlag;

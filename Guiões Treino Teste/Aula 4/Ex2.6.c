@@ -19,7 +19,7 @@ int main(void){
 		                                0x79, //E
 		                                0x71  //F
                                     		};
-	TRISB = TRISB & 0x000F;		// Configure RB0-RB3 as input 0000 0000 0000 1111
+	TRISB = TRISB | 0x000F;		// Configure RB0-RB3 as input 0000 0000 0000 1111
 	TRISB = TRISB & 0x80FF;		// Configure RB8-RB14 as output 1000 0000 1111 1111
 	TRISDbits.TRISD5 = 0;
 	TRISDbits.TRISD6 = 0;
