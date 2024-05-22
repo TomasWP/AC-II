@@ -22,7 +22,7 @@ int main(void){
 	
 	// 1 - Configure BaudRate Generator
 	
-	U2BRG = ((PBCLK+8*115200)/(16*115200))-1;
+	U2BRG = ((PBCLK+8*9600)/(16*9600))-1;		// baudrate = 9600 bps
 	U2MODEbits.BRGH = 0;				// Divide by 16
 	
 	// 2 - Configure number of data bits, parity and number of stop bits (see U2MODE register)
