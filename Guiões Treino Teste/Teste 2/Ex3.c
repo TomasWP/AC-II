@@ -13,7 +13,7 @@ void putstring(char* string) {
 
 volatile int count;
 
-int main(void){
+int main(void){							// EX 3	
 
 	TRISE = TRISE & 0xFFE1; // xxxx xxxx xxx0 000x
 

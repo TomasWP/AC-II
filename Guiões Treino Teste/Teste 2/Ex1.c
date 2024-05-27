@@ -6,7 +6,7 @@ void setDutyCycle(unsigned int dc){
 	OC2RS = ((PR2 + 1) * dc) / 100;
 }
 
-int main(void){
+int main(void){					// EX 1
 
 	TRISBbits.TRISB2 = 1;		// Configurar RB2 E RB0 como inputs
 	TRISBbits.TRISB0 = 1;		// ou TRISB = TRISB | 0x0005	(xxxx xxxx xxxx xx1x1)

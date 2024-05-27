@@ -26,7 +26,7 @@ void send2displays(unsigned char value) {
         }
 }
 
-int main(void){
+int main(void){					// EX 2
 
 	// Configure ADC - Aula 6
 
