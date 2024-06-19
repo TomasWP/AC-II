@@ -1,0 +1,13 @@
+10- b)
+11- a)
+12- d)
+13- a)
+14- c)
+15- a)
+16- d)    (k/k)x(bit/bit)=nºcircuitos
+17- a)    G = 2^30	M=2^20	K=2^10	4G = 4*2^30 = 2^32	bits do barramento = N	2^N= sqrt(2^32) -> N=16
+18- d)	  2^address low -> numero de colunas(nc) 	 2^address high -> numero de linhas(nl)	nl x nc = num.celulas(nc)	quantidade de armazenamento = nc x(bit/nmr.planos)
+19- 	  
+20- 
+21- b)
+22- d)				2^20 = 
